@@ -1,0 +1,141 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex: 1; 
+    min-height: 100vh; 
+    padding-bottom: 50pxж
+}
+
+.left_part {
+    max-width: 400px;
+    padding: 50px;
+}
+
+.right_part {
+    max-width: 400px;
+
+}
+
+.loginbox {
+    width: 330px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
+    padding: 19px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginbox input {
+    width: 95%;
+    display: block;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border: 1px solid rgb(221, 223, 226);
+    border-radius: 6px;
+}
+
+.line {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 223, 226);
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a.btn1 {
+    width: 105%;
+    background: rgb(8, 102, 255);
+    border-radius: 6px;
+    text-align: center;
+    padding: 14px 0;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a.btn1:hover {
+    background-color: rgb(6, 89, 224);
+}
+
+img {
+    height: 106px;
+    margin: -28px;
+    padding-bottom: 12px;
+}
+
+.left_part p {
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+a.btn2 {
+    background-color: rgb(66, 183, 42);
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    padding: 12px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+a.btn2:hover {
+    background-color: rgb(59, 171, 37);
+}
+
+.right_part p {
+    text-align: center;
+    margin-top: 22px;
+    width: 100%;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #f0f2f5;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
