@@ -3,7 +3,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-y: hidden;
 }
 
 .nav_bar {
@@ -51,6 +50,10 @@ select{
     font-size: 13px;
 }
 
+.micrimg{
+    width: 108px;
+}
+
 
 .add{
     background-color: rgb(0, 103, 184);
@@ -67,23 +70,22 @@ select{
 .add a:hover{
     text-decoration: underline;
 }
-.carousel{
-    position: relative;
-    height: 500px;
-    overflow: hidden;
+.carousel {
+    height: 500px; 
     margin-bottom: 40px;
 }
+
 
 .carousel_item{
     position: relative;
     display: none;
-    width: 100%;
-    height: 100%;
+    object-fit: contain;
 }
 .carousel_item img{
     width: 100%;
-    height: auto;
+    height: 500px;
     z-index: -1;
+    position: absolute;
     object-fit: cover;
 }
 .descr{
@@ -137,20 +139,20 @@ select{
 
 }
 
-/* buttons for slider */
 .buttons{
-    position: absolute;
-    bottom: 20px;
+    position: relative; /* Change from absolute to relative */
     display: flex;
-    left: 50%;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin-top: 480px; /* Adjust as needed */
     gap: 30px;
 }
 
  .buttons img{
-    /* align-items: center; */
     width: 40px;
+    cursor: pointer;
+    z-index: 11;
  }
 
  .displaySlide{
@@ -173,24 +175,25 @@ select{
     background-color: #262626;
   }
 
-
-  /* card */
-  
   .pics {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
-    padding: 100px 0;
-} 
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0;
+}
 
+/* Individual Card Styling */
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    overflow-: hidden;
+    overflow: hidden;
     width: 18rem;
     background-color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .card-img-top {
     width: 100%;
@@ -202,12 +205,13 @@ select{
     padding: 15px;
     text-align: center;
 }
+
 .card-title {
     font-size: 1.25rem;
     margin-bottom: 10px;
     color: #262626;
-} 
-.card:hover{}
+}
+
 .card-text {
     font-size: 0.9rem;
     color: #555;
@@ -215,7 +219,7 @@ select{
 }
 
 .btn-primary {
-    background-color: rgb(20, 135, 249);
+    background-color: rgb(0, 103, 184);
     color: white;
     padding: 10px 20px;
     font-size: 0.9rem;
@@ -226,5 +230,13 @@ select{
 }
 
 .btn-primary:hover {
-    background-color: rgba(1, 103, 180, 0.8);
+    background-color: rgba(0, 104, 184, 0.8);
 }
+
+
+.some-idea {
+    background-color: aliceblue;
+    font-size: medium ;
+}
+
+.
