@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+
+}
+
+li{
+    font-size: 24px;
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+.nav_bar{
+    position: relative;
+}
+
+.album{
+    margin: 0 auto;
+}
+
+
+
